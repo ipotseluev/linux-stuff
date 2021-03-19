@@ -1,0 +1,43 @@
+setup autocompletion: 
+
+        autoload -Uz compinstall
+        compinstall
+
+
+Common shell options
+====================
+
+The following are some of the shell options that are most often used.
+The descriptions are very brief; if you would like more information,
+read the zshoptions manual page (type "man zshoptions").
+
+# (1) Change directory given just path.
+# unsetopt autocd                                                                              (no value set)
+# (2) Use additional pattern matching features.
+# unsetopt extendedglob                                                                        (no value set)
+# (3) Append new history lines instead of overwriting.
+# unsetopt appendhistory                                                                       (no value set)
+# (4) Unmatched patterns cause an error.
+# setopt nomatch                                                                               (no value set)
+# (5) Beep on errors.
+# setopt beep                                                                                  (no value set)
+# (6) Immediately report changes in background job status.
+# unsetopt notify                                                                              (no value set)
+
+# (0) or (q)  Return to main menu (no changes made yet)
+
+
+=========
+
+The function will not be run in future, but you can run
+it yourself as follows:
+  autoload -Uz zsh-newuser-install
+  zsh-newuser-install -f
+
+The code added to ~/.zshrc is marked by the lines
+# Lines configured by zsh-newuser-install
+# End of lines configured by zsh-newuser-install
+You should not edit anything between these lines if you intend to
+run zsh-newuser-install again.  You may, however, edit any other part
+of the file.
+dcc-ipotceluev-01% view ~/.zshrc
